@@ -65,13 +65,13 @@ function updateCountdown() {
     const remainingDays = totalDays - passedDays;
 
     document.getElementById("today").innerHTML =
-        "Hoy es: " + today.toLocaleDateString();
+        "today is: " + today.toLocaleDateString();
 
     document.getElementById("counter").innerHTML =
-        "Día " + passedDays + " de " + totalDays;
+        "day " + passedDays + " of " + totalDays;
 
     document.getElementById("remaining").innerHTML =
-        "Faltan " + remainingDays + " días";
+        "left " + remainingDays + " days";
 }
 
 updateCountdown();
