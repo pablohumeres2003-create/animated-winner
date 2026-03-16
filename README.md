@@ -39,7 +39,7 @@ h1 {
 
 <body>
 
-<h1>⏳ Countdown personal</h1>
+<h1>⏳ hi pablo this is your countdown</h1>
 
 <div class="box" id="today"></div>
 <div class="box big" id="counter"></div>
@@ -65,13 +65,13 @@ function updateCountdown() {
     const remainingDays = totalDays - passedDays;
 
     document.getElementById("today").innerHTML =
-        "Hoy es: " + today.toLocaleDateString();
+        "today is: " + today.toLocaleDateString();
 
     document.getElementById("counter").innerHTML =
-        "Día " + passedDays + " de " + totalDays;
+        "day " + passedDays + " out of " + totalDays;
 
     document.getElementById("remaining").innerHTML =
-        "Faltan " + remainingDays + " días";
+        "there are " + remainingDays + " days left";
 }
 
 updateCountdown();
